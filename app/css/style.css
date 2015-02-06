@@ -1,0 +1,12 @@
+body { 
+	height: 100%; 
+	margin: 0; 
+	padding-top: 50px;
+}
+.style{
+	padding: 40px 15px;
+	text-align: center;
+}
+.map-div { 
+	height: 500px;
+}
