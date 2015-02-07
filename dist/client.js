@@ -1,27 +1,28 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var $ = require("./../../bower_components/jquery/dist/jquery.js");
 
-google.maps.event.addDomListener(window,'load',function() {
+// google.maps.event.addDomListener(window,'load',function() {
+//
+//   var map = new google.maps.Map($('.map-div')[0], {
+//    center: { lat: 39.8, lng: -60},
+//    zoom: 4,
+//    }
+//   );
+//
+//   var center;
+//   function calculateCenter() {
+//     center = map.getCenter();
+//   }
+//   google.maps.event.addDomListener(map, 'idle', function() {
+//     calculateCenter();
+//   });
+//   google.maps.event.addDomListener(window, 'resize', function() {
+//     map.setCenter(center);
+//   });
+//
+//
+// });
 
-  var map = new google.maps.Map($('.map-div')[0], {
-   center: { lat: 39.8, lng: -60},
-   zoom: 4,
-   }
-  );  
-
-  var center;
-  function calculateCenter() {
-    center = map.getCenter();
-  }
-  google.maps.event.addDomListener(map, 'idle', function() {
-    calculateCenter();
-  });
-  google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(center);
-  });
-
-
-});
 },{"./../../bower_components/jquery/dist/jquery.js":2}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.3
