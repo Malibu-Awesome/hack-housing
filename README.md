@@ -38,6 +38,7 @@ We made use of:
 - [Express](http://expressjs.com/)
 - iOs 8.1.3
 - [Starscream](https://github.com/daltoniam/starscream) Websockety Goodness
+- [Socket.io](http://socket.io/)
 - Hand harvested unicorn tears. Unicorns are very happy creatures, its hard to make them cry.
 
 ###In order to build and run our app:
