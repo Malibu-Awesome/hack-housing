@@ -24,7 +24,7 @@ Our approach for satisfying this challenge was to:
 
 Our team is comprised of:
 
-- [@wentingrohwer](https://github.com/wentingrohwer) - Math & Finacial Extraordinaire - UX
+- [@wentingrohwer](https://github.com/wentingrohwer) - Math & Financial Extraordinaire - UX
 - [@lee-leonardo](https://github.com/lee-leonardo) - Wrangler of Penguins - iOs
 - [@willrichman](https://github.com/willrichman) - Miner of Rubies - iOs
 - [@hectormartineziii](https://github.com/hectormartineziii) - Python Charmer - Node.js
@@ -38,6 +38,7 @@ We made use of:
 - [Node.js](http://nodejs.org/)
 - [Express](http://expressjs.com/)
 - iOs 8.1.3
+- Websockety Goodness
 
 In order to build and run our app:
 
@@ -48,10 +49,6 @@ bower
 browserify
 jquery
 express
-
-##Dependencies to be added:
-
-react, flux, flow
 
 ##Setup
 
