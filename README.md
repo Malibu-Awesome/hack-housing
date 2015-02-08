@@ -38,7 +38,7 @@ We made use of:
 - [Node.js](http://nodejs.org/)
 - [Express](http://expressjs.com/)
 - iOs 8.1.3
-- Websockety Goodness
+- [Starscream: Websockety Goodness](https://github.com/daltoniam/starscream)
 
 In order to build and run our app:
 
