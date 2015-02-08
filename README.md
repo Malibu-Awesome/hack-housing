@@ -8,7 +8,7 @@ If you'd like to suggest changes or improvements to this app, feel free to send 
 
 This application was developed on February 7th, 2015 for the [Zillow Hack Housing Hackthon](http://investors.zillow.com/releasedetail.cfm?ReleaseID=892685).
 
-![Isn't our app beautiful?!](http://slaw.me/blog/wp-content/uploads/2011/12/kitten.jpg)
+![Isn't our app beautiful?!](http://imgur.com/l8L7Zhd)
 
 Our app is live at http://example.com/awesome-app-that-doesnt-exist. You can also check out [this demo screencast](https://www.youtube.com/watch?v=dQw4w9WgXcQ) of our application on YouTube.
 
