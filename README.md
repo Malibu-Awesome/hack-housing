@@ -39,7 +39,7 @@ We made use of:
 - iOs 8.1.3
 - [Starscream](https://github.com/daltoniam/starscream) a conforming WebSocket (RFC 6455) client library in Swift for iOS and OSX.
 - [Socket.io](http://socket.io/) enables realtime, bi-directional communication between web clients and server.
-- Hand harvested unicorn tears. Unicorns are very happy creatures, its hard to make them cry.
+- Hand harvested unicorn tears. Unicorns are very happy creatures, it's hard to make them cry.
 
 ###In order to build and run our app:
 
