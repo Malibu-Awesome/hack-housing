@@ -1,7 +1,10 @@
 
 # Malibu Awesome Team: Zillow Hack Housing Hackathon
 
-The purpose of this app is to provide a budget calculator tool for first time homebuyers that will allow them to determine if a house and neighborhood is in their budget. You will find our app at [Github](https://github.com/Malibu-Awesome). If you'd like to suggest changes or improvements to this app, feel free to send a pull request.
+The purpose of this app is to provide a budget calculator tool for first time homebuyers 
+that will allow them to determine if a house and neighborhood is in their budget. 
+You will find our app at [Github](https://github.com/Malibu-Awesome). 
+If you'd like to suggest changes or improvements to this app, feel free to send a pull request.
 
 This application was developed on February 7th, 2015 for the [Zillow Hack Housing Hackthon](http://investors.zillow.com/releasedetail.cfm?ReleaseID=892685).
 
