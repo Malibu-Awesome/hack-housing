@@ -14,7 +14,7 @@
     <link href="bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -24,7 +24,42 @@
   </head>
 
   <body>
-
+    <main>
+    <nav>
+      <!--title-->
+      <h1>What my Affordability <span>?</span></h1>
+    </nav>
+    <section>
+      <!-- <h1 id="result">$5029.09</h1> -->
+      <form action="form.php" method="GET">
+        <ul>
+          <li>Monthly Gross Income <input type="text" name="grossIncome" placeholder="$9000" ></li>
+          <li>Monthly Transportation Cost <input type="text" placeholder="$500" name="TransCost"></li>
+          <li>Mortgage length in years <input type="text" placeholder="30" name="mortYears"></li>
+          <li>Current Mortgage Rate <input type="text" placeholder="3.81%" name="mortRate"></li>
+          <li>Debt to income ratio<input type="text" placeholder="36%" name="debtRatio"></li>
+        </ul>
+        <button type="submit" value="submit">Submit</button>
+      </form>
+        <!--result-->
+      <aside>
+        <ul>
+          <li>Your transportaion percentage is</li>
+          <li id="result-trans">10%</li>
+          <li>Your housing expense ratio is</li>
+          <li id="result-exp">23%</li>
+          <li>You can afford housing in the range of</li>
+          <li id="result-home">549,999.00 - 659,000,000</li>
+          <li>We recommend these neighborhood: </li>
+          <li id="result-zip"> 98006, 98077, 98072, 98104</li>
+        </ul>
+      </aside>
+    </section>
+    <div>
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284">
+    </div>
+  </main>
+<!--
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -42,9 +77,10 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+        </div><!/.nav-collapse -->
+      <!-- </div>
     </nav>
+     -->
 <!--
     <div class="container">
 

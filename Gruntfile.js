@@ -17,7 +17,7 @@ module.exports = function (grunt) {
         expand: true,
         flatten: true,
         cwd:'app/',
-        src:['css/*', '*.html',
+        src:['css/**/*', '*.html','image/*',
         '../bower_components/bootstrap/dist/css/bootstrap.min.css',
         '../bower_components/bootstrap/dist/js/bootstrap.min.js',
         'js/*.js'
@@ -36,7 +36,7 @@ module.exports = function (grunt) {
     //     flatten: true,
     //     cwd:'app/',
     //     src:['bower_components/bootstrap/*',
-          
+
     //     ],
     //     dest:'dist/bootstrap/'
     //     },
