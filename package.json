@@ -5,7 +5,8 @@
   "dependencies": {
     "bootstrap": "^3.3.2",
     "express": "4.0",
-    "grunt-bootstrap": "^0.1.0"
+    "grunt-bootstrap": "^0.1.0",
+    "socket.io": "^1.3.3"
   },
   "devDependencies": {
     "browserify": "^4.2.0",
