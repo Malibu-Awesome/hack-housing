@@ -68,7 +68,7 @@ module.exports.findAddress = function(app) {
 					, houseAndTransPercentageOfIncome
 					, financialData.yearlyHousingBudget
 					, financialData.yearlyTransCostBudget)
-				res.send(colorMeAffordable)
+				res.send(colorMeAffordable.result)
 	    });
 		})
 	});
