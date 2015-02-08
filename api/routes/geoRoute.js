@@ -5,6 +5,7 @@ module.exports.findAddress = function(app) {
 	var request = require('request');
 	var addressToGEOID;
 	var addressString = '';
+	var affordabilityResult;
 
 	//"Request" - GET Request
 	var headers = {
@@ -26,10 +27,18 @@ module.exports.findAddress = function(app) {
 		
 		request(options, function (error, response, body) {
 			if (!error && response.statusCode == 200) {
-				addressToGEOID = JSON.parse(body).result.addressMatches[0].geographies["Census Blocks"][0].BLKGRP;
+				addressToGEOID = JSON.parse(body).result.addressMatches[0].geographies["Census Blocks"][0].GEOID.slice(0,12);
 			}
-			res.send({
-	    	result: addressToGEOID
+			var affordabilityOptions = {
+				url: 'http://services.arcgis.com/VTyQ9soqVukalItT/arcgis/rest/services/LocationAffordabilityIndexData/FeatureServer/0/query?where=blkgrp%3D' + addressToGEOID + '&outFields=hh_type1_ht_own%2C+area_median_income&f=json'
+			}
+			request(affordabilityOptions, function (error, response, body) {
+				if (!error && response.statusCode == 200) {
+					affordabilityResult = JSON.parse(body);
+				}
+				res.send({
+		    		result: affordabilityResult
+		    	})
 	    });
 		})
 	});
