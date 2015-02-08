@@ -12,11 +12,11 @@ Our app is live at http://example.com/awesome-app-that-doesnt-exist. You can als
 ## Challenge and Approach
 
 Our submission is for the following Challenge: 
-Build an app that provides first time home buyers with an app that makes it easier to determine how much home they can afford.
+Provide first time home buyers with a tool that makes it easier to determine how much home they can afford.
 
 Our approach for satisfying this challenge was to:
 
-- Develop a budget calculator tool
+- Develop a budget calculator app
 - Share it on Github
 - Collect feedback from the community, improve and iterate
 
