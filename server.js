@@ -1,19 +1,32 @@
+var path = require("path");
 var express = require("express");
-var http = require("http");
+var exphbs = require("express-handlebars");
+var app = express();
+
+// setup transparent jsx requires
+require('node-jsx').install({extension: ['js']});
 
 //SERVER SETUP
-var app = express();
 
 app.set("port", process.env.PORT || 4000);
 
-var server = http.createServer(app);
-server.listen(app.get("port"), function () {
-    console.log("Server start on:" + app.get("port"));
-});
-//END SERVER SETUP
+app.use(".hbs", exphbs({ extname: ".hbs"}));
+app.set("view engine", ".hbs");
+app.set("views", path.join(__dirname, "/templates"));
+
+
+//STATIC ROUTES
+app.use(express.static(__dirname + "/dist"));
+//app.use(express.static(__dirname + "/app"));
+
 
 //ROUTES
-require("./api/routes/oneRoute")(app);
-require("./api/routes/geoRoute").findAddress(app);
+app.get("/", function (req, res) {
+  return res.render("index", {});
+});
+//require("./api/routes/oneRoute")(app);
+//require("./api/routes/geoRoute").findAddress(app);
 
-app.use(express.static(__dirname + "/dist"));
+app.listen(app.get("port"), function () {
+    console.log("Server start on:" + app.get("port"));
+});
