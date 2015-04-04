@@ -17,8 +17,6 @@ app.set("views", path.join(__dirname, "/templates"));
 
 //STATIC ROUTES
 app.use(express.static(__dirname + "/dist"));
-//app.use(express.static(__dirname + "/app"));
-
 
 //ROUTES
 app.get("/", function (req, res) {
