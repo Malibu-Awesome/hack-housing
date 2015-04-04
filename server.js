@@ -24,8 +24,9 @@ app.use(express.static(__dirname + "/dist"));
 app.get("/", function (req, res) {
   return res.render("index", {});
 });
-//require("./api/routes/oneRoute")(app);
-//require("./api/routes/geoRoute").findAddress(app);
+
+require("./api/routes/oneRoute")(app);
+require("./api/routes/geoRoute").findAddress(app);
 
 app.listen(app.get("port"), function () {
     console.log("Server start on:" + app.get("port"));
